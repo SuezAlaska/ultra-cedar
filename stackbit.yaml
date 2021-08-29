@@ -1,0 +1,6943 @@
+stackbitVersion: ~0.3.0
+ssgName: nextjs
+nodeVersion: '12'
+publishDir: out
+dataDir: ''
+models:
+  lottie:
+    type: data
+    label: Lottie
+    folder: lotties
+    fields:
+      - type: string
+        name: v
+        label: V
+      - type: number
+        name: fr
+        label: Fr
+        subtype: int
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: w
+        label: W
+        subtype: int
+      - type: number
+        name: h
+        label: H
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: list
+        name: assets
+        label: Assets
+        items:
+          type: model
+          models:
+            - object_qfuiu7aw12
+            - object_z1ue2xzy8g
+      - type: list
+        name: layers
+        label: Layers
+        items:
+          type: model
+          models:
+            - object_4o4ed6qldn
+            - object_dbqk8v6f69
+            - object_vwsuegzdnc
+            - object_bjfekqsnb8
+            - object_k4cyo8f49r
+            - object_8lhraugf92
+  assets:
+    type: data
+    label: Assets
+    file: seeds/assets.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: link
+          label: Link
+        - type: image
+          name: filename
+          label: Filename
+        - type: image
+          name: url
+          label: Url
+  categories:
+    type: data
+    label: Categories
+    file: seeds/categories.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: slug
+          label: Slug
+        - type: string
+          name: name
+          label: Name
+        - type: object
+          name: meta
+          label: Meta
+          fields:
+            - type: image
+              name: image
+              label: Image
+  products:
+    type: data
+    label: Products
+    file: seeds/products.json
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: object
+          name: product
+          label: Product
+          fields:
+            - type: string
+              name: name
+              label: Name
+            - type: string
+              name: description
+              label: Description
+            - type: string
+              name: price
+              label: Price
+            - type: string
+              name: category_id
+              label: Category Id
+        - type: list
+          name: variant
+          label: Variant
+          items:
+            type: object
+            fields:
+              - type: string
+                name: name
+                label: Name
+              - type: list
+                name: options
+                label: Options
+                items:
+                  type: object
+                  fields:
+                    - type: string
+                      name: description
+                      label: Description
+                    - type: string
+                      name: price
+                      label: Price
+  object_a2lr0z6njl:
+    type: object
+    label: Object 1
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: int
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: int
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_x5lr3wd86r:
+    type: object
+    label: Object 2
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_rnel0ddjrl:
+    type: object
+    label: Object 3
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_xlfkyd7uld:
+    type: object
+    label: Object 4
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_6olsz3pul7:
+    type: object
+    label: Object 5
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+      - type: number
+        name: mm
+        label: Mm
+        subtype: int
+  object_mn7tukr0xl:
+    type: object
+    label: Object 6
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_33zp12qt4m:
+    type: object
+    label: Object 7
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: object
+        name: g
+        label: G
+        fields:
+          - type: number
+            name: p
+            label: P
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: e
+        label: E
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: t
+        label: T
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_wkflgbgcjj:
+    type: object
+    label: Object 8
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: int
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: int
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_cinjf5bvrd:
+    type: object
+    label: Object 9
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_hwpfloryyi:
+    type: object
+    label: Object 10
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: object
+        name: g
+        label: G
+        fields:
+          - type: number
+            name: p
+            label: P
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: e
+        label: E
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: t
+        label: T
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_frb5aipanx:
+    type: object
+    label: Object 11
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_zgconahtli:
+    type: object
+    label: Object 12
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_j3932lxkjo:
+    type: object
+    label: Object 13
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: list
+        name: shapes
+        label: Shapes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: ty
+              label: Ty
+            - type: list
+              name: it
+              label: It
+              items:
+                type: model
+                models:
+                  - object_a2lr0z6njl
+                  - object_x5lr3wd86r
+                  - object_rnel0ddjrl
+                  - object_xlfkyd7uld
+                  - object_6olsz3pul7
+                  - object_mn7tukr0xl
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: number
+              name: cix
+              label: Cix
+              subtype: int
+            - type: number
+              name: bm
+              label: Bm
+              subtype: int
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: boolean
+              name: hd
+              label: Hd
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+  object_g7d8y2fdnj:
+    type: object
+    label: Object 14
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: object
+                  fields:
+                    - type: object
+                      name: i
+                      label: I
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: int
+                    - type: object
+                      name: o
+                      label: O
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: int
+                    - type: number
+                      name: t
+                      label: T
+                      subtype: float
+                    - type: list
+                      name: s
+                      label: S
+                      items:
+                        type: number
+                        subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: list
+        name: shapes
+        label: Shapes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: ty
+              label: Ty
+            - type: list
+              name: it
+              label: It
+              items:
+                type: model
+                models:
+                  - object_33zp12qt4m
+                  - object_wkflgbgcjj
+                  - object_cinjf5bvrd
+                  - object_hwpfloryyi
+                  - object_frb5aipanx
+                  - object_zgconahtli
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: number
+              name: cix
+              label: Cix
+              subtype: int
+            - type: number
+              name: bm
+              label: Bm
+              subtype: int
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: boolean
+              name: hd
+              label: Hd
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+  object_tfh164l6k3:
+    type: object
+    label: Object 15
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_1yef0exchu:
+    type: object
+    label: Object 16
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: d
+        label: D
+        subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_783q9h4gdv:
+    type: object
+    label: Object 17
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_ts3ilgl876:
+    type: object
+    label: Object 18
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_blxc05pisf:
+    type: object
+    label: Object 19
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: d
+        label: D
+        subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_xpvz10rmwc:
+    type: object
+    label: Object 20
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_qk2sv9ips7:
+    type: object
+    label: Object 21
+    fields:
+      - type: string
+        name: 'n'
+        label: 'N'
+      - type: string
+        name: nm
+        label: Nm
+      - type: object
+        name: v
+        label: V
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+  object_gzue9srjf9:
+    type: object
+    label: Object 22
+    fields:
+      - type: string
+        name: 'n'
+        label: 'N'
+      - type: string
+        name: nm
+        label: Nm
+      - type: object
+        name: v
+        label: V
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: int
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: int
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+  object_m4fgluwy5w:
+    type: object
+    label: Object 23
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: w
+        label: W
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: lc
+        label: Lc
+        subtype: int
+      - type: number
+        name: lj
+        label: Lj
+        subtype: int
+      - type: number
+        name: ml
+        label: Ml
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: list
+        name: d
+        label: D
+        items:
+          type: model
+          models:
+            - object_qk2sv9ips7
+            - object_gzue9srjf9
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_jq37kitk54:
+    type: object
+    label: Object 24
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_it8gfjwfon:
+    type: object
+    label: Object 25
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: d
+        label: D
+        subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_6iswu0y38d:
+    type: object
+    label: Object 26
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_wxt0by6c9h:
+    type: object
+    label: Object 27
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_04ez9d7qwm:
+    type: object
+    label: Object 28
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_0m28ckmawp:
+    type: object
+    label: Object 29
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_mnzidepcny:
+    type: object
+    label: Object 30
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_whjjegggok:
+    type: object
+    label: Object 31
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_mwpfrhh4lj:
+    type: object
+    label: Object 32
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_1az0q7uast:
+    type: object
+    label: Object 33
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_kexol5pg9m:
+    type: object
+    label: Object 34
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_jr45wjnvlo:
+    type: object
+    label: Object 35
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_22kc1yku16:
+    type: object
+    label: Object 36
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_de0usjudth:
+    type: object
+    label: Object 37
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_vwsuegzdnc:
+    type: object
+    label: Object 38
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: number
+        name: sw
+        label: Sw
+        subtype: int
+      - type: number
+        name: sh
+        label: Sh
+        subtype: int
+      - type: string
+        name: sc
+        label: Sc
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: number
+        name: hidden
+        label: Hidden
+        subtype: int
+      - type: number
+        name: td
+        label: Td
+        subtype: int
+      - type: list
+        name: shapes
+        label: Shapes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: ty
+              label: Ty
+            - type: list
+              name: it
+              label: It
+              items:
+                type: model
+                models:
+                  - object_tfh164l6k3
+                  - object_1yef0exchu
+                  - object_783q9h4gdv
+                  - object_m4fgluwy5w
+                  - object_jq37kitk54
+                  - object_it8gfjwfon
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: number
+              name: cix
+              label: Cix
+              subtype: int
+            - type: number
+              name: bm
+              label: Bm
+              subtype: int
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: boolean
+              name: hd
+              label: Hd
+  object_bjfekqsnb8:
+    type: object
+    label: Object 39
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: tt
+        label: Tt
+        subtype: int
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: object
+                  fields:
+                    - type: object
+                      name: i
+                      label: I
+                      fields:
+                        - type: number
+                          name: x
+                          label: X
+                          subtype: float
+                        - type: number
+                          name: 'y'
+                          label: 'Y'
+                          subtype: float
+                    - type: object
+                      name: o
+                      label: O
+                      fields:
+                        - type: number
+                          name: x
+                          label: X
+                          subtype: float
+                        - type: number
+                          name: 'y'
+                          label: 'Y'
+                          subtype: float
+                    - type: number
+                      name: t
+                      label: T
+                      subtype: int
+                    - type: list
+                      name: s
+                      label: S
+                      items:
+                        type: number
+                        subtype: int
+                    - type: list
+                      name: to
+                      label: To
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: ti
+                      label: Ti
+                      items:
+                        type: number
+                        subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: list
+        name: shapes
+        label: Shapes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: ty
+              label: Ty
+            - type: list
+              name: it
+              label: It
+              items:
+                type: model
+                models:
+                  - object_ts3ilgl876
+                  - object_blxc05pisf
+                  - object_xpvz10rmwc
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: number
+              name: cix
+              label: Cix
+              subtype: int
+            - type: number
+              name: bm
+              label: Bm
+              subtype: int
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: boolean
+              name: hd
+              label: Hd
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+  object_k4cyo8f49r:
+    type: object
+    label: Object 40
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: object
+                  fields:
+                    - type: object
+                      name: i
+                      label: I
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: int
+                    - type: object
+                      name: o
+                      label: O
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: int
+                    - type: number
+                      name: t
+                      label: T
+                      subtype: int
+                    - type: list
+                      name: s
+                      label: S
+                      items:
+                        type: number
+                        subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: object
+                  fields:
+                    - type: object
+                      name: i
+                      label: I
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: int
+                    - type: object
+                      name: o
+                      label: O
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: int
+                    - type: number
+                      name: t
+                      label: T
+                      subtype: int
+                    - type: list
+                      name: s
+                      label: S
+                      items:
+                        type: number
+                        subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: list
+        name: shapes
+        label: Shapes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: ty
+              label: Ty
+            - type: list
+              name: it
+              label: It
+              items:
+                type: model
+                models:
+                  - object_6iswu0y38d
+                  - object_wxt0by6c9h
+                  - object_04ez9d7qwm
+                  - object_0m28ckmawp
+                  - object_mnzidepcny
+                  - object_whjjegggok
+                  - object_mwpfrhh4lj
+                  - object_1az0q7uast
+                  - object_kexol5pg9m
+                  - object_jr45wjnvlo
+                  - object_22kc1yku16
+                  - object_de0usjudth
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: number
+              name: cix
+              label: Cix
+              subtype: int
+            - type: number
+              name: bm
+              label: Bm
+              subtype: int
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: boolean
+              name: hd
+              label: Hd
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+  object_qfuiu7aw12:
+    type: object
+    label: Object 41
+    fields: []
+  object_z1ue2xzy8g:
+    type: object
+    label: Object 42
+    fields:
+      - type: string
+        name: id
+        label: Id
+      - type: list
+        name: layers
+        label: Layers
+        items:
+          type: model
+          models:
+            - object_j3932lxkjo
+            - object_g7d8y2fdnj
+  object_8lhraugf92:
+    type: object
+    label: Object 43
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: refId
+        label: Ref Id
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: boolean
+        name: hasMask
+        label: Has Mask
+      - type: list
+        name: masksProperties
+        label: Masks Properties
+        items:
+          type: object
+          fields:
+            - type: boolean
+              name: inv
+              label: Inv
+            - type: string
+              name: mode
+              label: Mode
+            - type: object
+              name: pt
+              label: Pt
+              fields:
+                - type: number
+                  name: a
+                  label: A
+                  subtype: int
+                - type: list
+                  name: k
+                  label: K
+                  items:
+                    type: object
+                    fields:
+                      - type: object
+                        name: i
+                        label: I
+                        fields:
+                          - type: number
+                            name: x
+                            label: X
+                            subtype: float
+                          - type: number
+                            name: 'y'
+                            label: 'Y'
+                            subtype: float
+                      - type: object
+                        name: o
+                        label: O
+                        fields:
+                          - type: number
+                            name: x
+                            label: X
+                            subtype: float
+                          - type: number
+                            name: 'y'
+                            label: 'Y'
+                            subtype: float
+                      - type: number
+                        name: t
+                        label: T
+                        subtype: int
+                      - type: list
+                        name: s
+                        label: S
+                        items:
+                          type: object
+                          fields:
+                            - type: boolean
+                              name: c
+                              label: C
+                - type: number
+                  name: ix
+                  label: Ix
+                  subtype: int
+            - type: object
+              name: o
+              label: O
+              fields:
+                - type: number
+                  name: a
+                  label: A
+                  subtype: int
+                - type: number
+                  name: k
+                  label: K
+                  subtype: int
+                - type: number
+                  name: ix
+                  label: Ix
+                  subtype: int
+            - type: object
+              name: x
+              label: X
+              fields:
+                - type: number
+                  name: a
+                  label: A
+                  subtype: int
+                - type: number
+                  name: k
+                  label: K
+                  subtype: int
+                - type: number
+                  name: ix
+                  label: Ix
+                  subtype: int
+            - type: string
+              name: nm
+              label: Nm
+      - type: number
+        name: w
+        label: W
+        subtype: int
+      - type: number
+        name: h
+        label: H
+        subtype: int
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+  object_sdlxy45gvf:
+    type: object
+    label: Object 44
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_dtnuziod5v:
+    type: object
+    label: Object 45
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+      - type: number
+        name: mm
+        label: Mm
+        subtype: int
+  object_pzke82xy6d:
+    type: object
+    label: Object 46
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_gnbj17wzgx:
+    type: object
+    label: Object 47
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_0klxzssu2u:
+    type: object
+    label: Object 48
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_01aj1yzv91:
+    type: object
+    label: Object 49
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_kfdr6b7wwf:
+    type: object
+    label: Object 50
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_mbj56u26rn:
+    type: object
+    label: Object 51
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_jzti3edu0m:
+    type: object
+    label: Object 52
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_i6fbdg5z62:
+    type: object
+    label: Object 53
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_tlmevu33u2:
+    type: object
+    label: Object 54
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_sn6seizp9p:
+    type: object
+    label: Object 55
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_hoqd60rr1o:
+    type: object
+    label: Object 56
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_mdcwwof4e8:
+    type: object
+    label: Object 57
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: object
+              fields:
+                - type: object
+                  name: i
+                  label: I
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: object
+                  name: o
+                  label: O
+                  fields:
+                    - type: list
+                      name: x
+                      label: X
+                      items:
+                        type: number
+                        subtype: float
+                    - type: list
+                      name: 'y'
+                      label: 'Y'
+                      items:
+                        type: number
+                        subtype: float
+                - type: number
+                  name: t
+                  label: T
+                  subtype: int
+                - type: list
+                  name: s
+                  label: S
+                  items:
+                    type: number
+                    subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_994376nshi:
+    type: object
+    label: Object 58
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_9l2hinvy1g:
+    type: object
+    label: Object 59
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_szul76lx9k:
+    type: object
+    label: Object 60
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+      - type: number
+        name: mm
+        label: Mm
+        subtype: int
+  object_gepww1vu7n:
+    type: object
+    label: Object 61
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_jzzsqusi11:
+    type: object
+    label: Object 62
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: p
+        label: P
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: a
+        label: A
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: s
+        label: S
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: r
+        label: R
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sk
+        label: Sk
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: sa
+        label: Sa
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+  object_f49zk5ut2v:
+    type: object
+    label: Object 63
+    fields:
+      - type: string
+        name: ty
+        label: Ty
+      - type: object
+        name: c
+        label: C
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: list
+            name: k
+            label: K
+            items:
+              type: number
+              subtype: float
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: object
+        name: o
+        label: O
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: number
+            name: k
+            label: K
+            subtype: int
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: number
+        name: r
+        label: R
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_by00dsw2xj:
+    type: object
+    label: Object 64
+    fields:
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: string
+        name: ty
+        label: Ty
+      - type: number
+        name: ix
+        label: Ix
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: number
+            name: a
+            label: A
+            subtype: int
+          - type: object
+            name: k
+            label: K
+            fields:
+              - type: boolean
+                name: c
+                label: C
+          - type: number
+            name: ix
+            label: Ix
+            subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: string
+        name: mn
+        label: Mn
+      - type: boolean
+        name: hd
+        label: Hd
+  object_4o4ed6qldn:
+    type: object
+    label: Object 65
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: object
+                  fields:
+                    - type: object
+                      name: i
+                      label: I
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: float
+                    - type: object
+                      name: o
+                      label: O
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: float
+                    - type: number
+                      name: t
+                      label: T
+                      subtype: int
+                    - type: list
+                      name: s
+                      label: S
+                      items:
+                        type: number
+                        subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: object
+                  fields:
+                    - type: object
+                      name: i
+                      label: I
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: float
+                    - type: object
+                      name: o
+                      label: O
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: float
+                    - type: number
+                      name: t
+                      label: T
+                      subtype: int
+                    - type: list
+                      name: s
+                      label: S
+                      items:
+                        type: number
+                        subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: list
+        name: ef
+        label: Ef
+        items:
+          type: object
+          fields:
+            - type: number
+              name: ty
+              label: Ty
+              subtype: int
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: number
+              name: en
+              label: En
+              subtype: int
+            - type: list
+              name: ef
+              label: Ef
+              items:
+                type: object
+                fields:
+                  - type: number
+                    name: ty
+                    label: Ty
+                    subtype: int
+                  - type: string
+                    name: nm
+                    label: Nm
+                  - type: string
+                    name: mn
+                    label: Mn
+                  - type: number
+                    name: ix
+                    label: Ix
+                    subtype: int
+                  - type: object
+                    name: v
+                    label: V
+                    fields:
+                      - type: number
+                        name: a
+                        label: A
+                        subtype: int
+                      - type: number
+                        name: k
+                        label: K
+                        subtype: int
+                      - type: number
+                        name: ix
+                        label: Ix
+                        subtype: int
+      - type: list
+        name: shapes
+        label: Shapes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: ty
+              label: Ty
+            - type: list
+              name: it
+              label: It
+              items:
+                type: model
+                models:
+                  - object_jzzsqusi11
+                  - object_f49zk5ut2v
+                  - object_by00dsw2xj
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: number
+              name: cix
+              label: Cix
+              subtype: int
+            - type: number
+              name: bm
+              label: Bm
+              subtype: int
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: boolean
+              name: hd
+              label: Hd
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
+  object_dbqk8v6f69:
+    type: object
+    label: Object 66
+    fields:
+      - type: number
+        name: ddd
+        label: Ddd
+        subtype: int
+      - type: number
+        name: ind
+        label: Ind
+        subtype: int
+      - type: number
+        name: ty
+        label: Ty
+        subtype: int
+      - type: string
+        name: nm
+        label: Nm
+      - type: number
+        name: sr
+        label: Sr
+        subtype: int
+      - type: object
+        name: ks
+        label: Ks
+        fields:
+          - type: object
+            name: o
+            label: O
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: object
+                  fields:
+                    - type: object
+                      name: i
+                      label: I
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: float
+                    - type: object
+                      name: o
+                      label: O
+                      fields:
+                        - type: list
+                          name: x
+                          label: X
+                          items:
+                            type: number
+                            subtype: float
+                        - type: list
+                          name: 'y'
+                          label: 'Y'
+                          items:
+                            type: number
+                            subtype: float
+                    - type: number
+                      name: t
+                      label: T
+                      subtype: int
+                    - type: list
+                      name: s
+                      label: S
+                      items:
+                        type: number
+                        subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: r
+            label: R
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: number
+                name: k
+                label: K
+                subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: p
+            label: P
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: float
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: a
+            label: A
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+          - type: object
+            name: s
+            label: S
+            fields:
+              - type: number
+                name: a
+                label: A
+                subtype: int
+              - type: list
+                name: k
+                label: K
+                items:
+                  type: number
+                  subtype: int
+              - type: number
+                name: ix
+                label: Ix
+                subtype: int
+      - type: number
+        name: ao
+        label: Ao
+        subtype: int
+      - type: list
+        name: shapes
+        label: Shapes
+        items:
+          type: object
+          fields:
+            - type: string
+              name: ty
+              label: Ty
+            - type: list
+              name: it
+              label: It
+              items:
+                type: model
+                models:
+                  - object_sdlxy45gvf
+                  - object_dtnuziod5v
+                  - object_pzke82xy6d
+                  - object_gnbj17wzgx
+                  - object_0klxzssu2u
+                  - object_01aj1yzv91
+                  - object_kfdr6b7wwf
+                  - object_mbj56u26rn
+                  - object_jzti3edu0m
+                  - object_i6fbdg5z62
+                  - object_tlmevu33u2
+                  - object_sn6seizp9p
+                  - object_hoqd60rr1o
+                  - object_mdcwwof4e8
+                  - object_994376nshi
+                  - object_9l2hinvy1g
+                  - object_szul76lx9k
+                  - object_gepww1vu7n
+            - type: string
+              name: nm
+              label: Nm
+            - type: number
+              name: np
+              label: Np
+              subtype: int
+            - type: number
+              name: cix
+              label: Cix
+              subtype: int
+            - type: number
+              name: bm
+              label: Bm
+              subtype: int
+            - type: number
+              name: ix
+              label: Ix
+              subtype: int
+            - type: string
+              name: mn
+              label: Mn
+            - type: boolean
+              name: hd
+              label: Hd
+      - type: number
+        name: ip
+        label: Ip
+        subtype: int
+      - type: number
+        name: op
+        label: Op
+        subtype: int
+      - type: number
+        name: st
+        label: St
+        subtype: int
+      - type: number
+        name: bm
+        label: Bm
+        subtype: int
